@@ -1,0 +1,54 @@
+
+= Aufgabenblatt 2 =
+
+== Aufgabe 2.1 - google-translate ==
+
+Experimentieren Sie mit dem von Google angebotenen System zur automatischen Übersetzung (http://translate.google.com) und zumindest den Sprachen Deutsch und Englisch in beiden Übersetzungsrichtungen.
+
+* Illustrieren Sie Ihre Erfahrungen damit durch Beispiele gelungener und Beispiele missglückter Übersetzungen.
+* Was können Sie aus fehlgeschlagenen Übersetzungen jeweils schließen?
+* Ist es möglich, gelungene Übersetzungen in die ursprüngliche Quelle zurück zu übersetzen? Geben Sie auch dafür gelungene und missglückte Versuche an.
+
+
+== Aufgabe 2.2 - Wortklassen-Brown ==
+
+Nehmen Sie einen englischsprachigen Text Ihrer Wahl (mit mindestens 50 Wörtern) und bestimmen Sie zu jedem vorkommenden Wort die Wortklasse. Verwenden Sie dazu die Tags des sog. Brown-Corpus (http://khnt.aksis.uib.no/icame/manuals/brown/).
+
+* Gibt es in Ihrem Beispieltext Wörter, die ohne Berücksichtigung des Kontextes zu unterschiedlichen Wortklassen gehören können?
+* Gibt es Kombinationen aufeinanderfolgender Wortklassen, die wiederholt auftreten?
+
+
+== Aufgabe 2.3 - Welcome-NLTK ==
+
+Installieren Sie zunächst NLTK und die benötigten Pakete Numpy und PyYAML wie hier beschrieben: http://www.nltk.org/install
+Installieren Sie im Anschluss (bspw. mit Hilfe des interaktiven Installers) die NLTK-Daten wie hier beschrieben: http://nltk.org/data.html
+
+Alternative: Beantragen Sie bitte einen Account und Zugang zum Rechnerlabor G29-033, dort kann Python + NLTK + NLTK-Corpus verwendet werden. (Ansprechpartner Account / Laborzugang ist Frau Pape G29-023, eine kurze Einweisung erhalten Sie bei Bedarf von Herrn Bauer G29-014).
+
+* Experimentieren Sie mit NLTK und berichten Sie über Ihre ersten Schritte. Beispiele finden sich in den Vorlesungsfolien "Einführung in NLTK" und im ersten Kapitel  'Natural Language Processing with Python' (http://nltk.googlecode.com/svn/trunk/doc/book/ch01.html) .
+* Die Funktion similar kann verwendet werden, um Wörter zu finden, die in ähnlichen Kontexten auftreten wie ein bestimmtes Suchwort. Vergleichen und Bewerten Sie die Ergebnisse, die diese Funktion für zwei Antonyme (Antonyme sind in der Sprachwissenschaft Wörter mit gegensätzlicher Bedeutung) wie bspw. "happy" und "sad" liefert. Verwenden Sie dafür den Gutenberg-Corpus (siehe Vorlesungsfolien) 
+
+
+== Aufgabe 2.4 - POS-tagger ==
+
+* Many words, like ski and race, can be used as nouns or verbs with no difference in pronunciation. Can you think of others? Hint: think of a commonplace object and try to put the word to before it to see if it can also be a verb, or think of an action and try to put the before it to see if it can also be a noun.
+
+* Now make up a sentence with both uses of this word, and run the POS-tagger on this sentence. Discuss the result (cf. http://nltk.googlecode.com/svn/trunk/doc/book/ch05.html, 5.1 Using a Tagger).
+
+
+== Aufgabe 2.5 - Brown Corpus ==
+
+The Brown Corpus is a convenient resource for studying systematic differences between genres, a kind of linguistic inquiry known as stylistics. Let's compare genres in their usage of modal verbs. The first step is to produce the counts for a particular genre.
+
+Remember to import nltk before doing the following:
+
+    >>> from nltk.corpus import brown
+    >>> news_text = brown.words(categories='news')
+    >>> fdist = nltk.FreqDist([w.lower() for w in news_text])
+    >>> modals = ['can', 'could', 'may', 'might', 'must', 'will']
+    >>> for m in modals:
+    ...     print m + ':', fdist[m],
+    ...
+    can: 94 could: 87 may: 93 might: 38 must: 53 will: 389
+
+* Your Turn: Choose a different section of the Brown Corpus, and adapt the previous example to count a selection of wh words, such as what, when, where, who, and why (cf. http://nltk.googlecode.com/svn/trunk/doc/book/ch02.html).
