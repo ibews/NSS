@@ -1,0 +1,16 @@
+ski, race, love, punch, hit, sound
+
+To sound reasonable he said nothing about the sound he heared.
+[('To', 'TO'),
+ ('sound', 'VB'),
+ ('reasonable', 'JJ'),
+ ('he', 'PRP'),
+ ('said', 'VBD'),
+ ('nothing', 'NN'),
+ ('about', 'IN'),
+ ('the', 'DT'),
+ ('sound', 'NN'),
+ ('he', 'PRP'),
+ ('heared', 'VBD'),
+ ('.', '.')]
+
