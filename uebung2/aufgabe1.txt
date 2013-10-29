@@ -1,0 +1,27 @@
+Illustrieren Sie Ihre Erfahrungen damit durch _Beispiele gelungener und Beispiele missglückter Übersetzungen_.
+-> Illustrate your experience with it through _examples of successful and unsuccessful examples translations_.
+
+Ist es möglich, gelungene Übersetzungen in die ursprüngliche Quelle zurück zu übersetzen? Geben Sie auch dafür 
+gelungene und missglückte Versuche an.
+-> Is it possible to successful translations in the original source back to translate? Also tell them for 
+   successful and unsuccessful attempts.
+
+The NSA asked Tokyo if it could intercept personal information from communication data passing through Japan 
+via cables connecting it, China and other regional areas, including Internet activity and phone calls, they said.
+-> Die NSA fragte Tokyo, wenn sie persönliche Informationen von Kommunikationsdaten durch Japan über Kabel 
+   Anschluss abfangen konnte, China und anderen regionalen Bereichen, einschließlich der Internet-Aktivitäten 
+   und Telefonate, sagten sie.
+
+erfolgreich:
+The open nature of Wikipedia has led to concerns about the quality of writing, the amount of vandalism, and the 
+accuracy of information. 
+-> Der offene Charakter der Wikipedia hat Bedenken über die Qualität des Schreibens, den Betrag von Vandalismus 
+   und die Richtigkeit der Informationen geführt.
+-> The open nature of Wikipedia has led concerns about the quality of writing, the amount of vandalism and the 
+accuracy of the information.
+--> kind of works
+--> examples where there are significant differences if a text is translated mulitple times through different 
+languages
+
+Fehlgeschlagene Übersetzungen sind oft dem deutschen Satzbau oder der Mehrdeutigkeit von Begriffen geschuldet. 
+Um ein grundsätzliches Verständnis fremdsprachlicher Texte zu bekommen kann google.translate eingesetzt werden.
