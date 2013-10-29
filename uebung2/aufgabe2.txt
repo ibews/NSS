@@ -1,0 +1,14 @@
+British Prime Minister David Cameron said on Monday his government was likely to act to stop newspapers publishing
+JJ      NP    NP       NP    NP      VBD  IN NN     PN$ NN         BEDZ RB       VB     VB   NN         VBG
+
+what he called damaging leaks from former U.S. intelligence operative Edward Snowden unless they began to behave more responsibly.
+WDT  PN VBD    VBG      NN    IN   JJ          NN           NN        NP     NP      DTX    PN   VBD      VB     DTI  NN
+
+"If they (newspapers) don't demonstrate some social responsibility it will be very difficult for government
+ CS PN    NN          *     VB          DTI  NN     NN             PN VB   BE JJS  JJ        CC  NN
+
+to stand back and not to act," Cameron told parliament, saying Britain's Guardian newspaper had "gone on"
+   VB    JJR  CC  *      VB    NP      VBD  NN          VBG    NP        NP       NN        VBD  VBN  JJ
+
+to print damaging material after initially agreeing to destroy other sensitive data.
+   VB    VBG      NN       RB    RB        VBG         VB      JJ    ADJ       NN
