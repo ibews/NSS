@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 15 13:54:41 2013
+
+@author: ibews
+"""
+
+1 Fighting animals could be dangerous.
+2 Visiting relatives can be tiresome.
+
+a What are paraphrases for the different interpretations?
+1.1 animals which fight each other can be dangerous to a person coming too cose
+1.2 animals which fight if they feel attacked (instead of fleeing) can be dangerous
+
+2.1 To visit relatives can be tiresome
+2.2 relatives which visit you can be tiring
+
+b Is ambiguity of the individual words to blame? If not, what is the cause of the ambiguity?
+The usage ef specials forms of a word in defferent grammatical context (or tenses) is to blame
+for the ambiguity of the sentences
+
+c Find at least two German sentences with (at least) two quite different interpretations.
+
+Komm wir essen(,) Oma
