@@ -28,7 +28,7 @@ L ->
 parser = nltk.ChartParser(grammar)
 
 # Das zu parsende Wort
-word = "aba"
+word = "baabbab"
 
 # Parsen => Erzeugen der Syntaxbaeume
 trees = parser.nbest_parse(word)
