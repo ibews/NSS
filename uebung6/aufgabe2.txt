@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 26 12:23:10 2013
+
+@author: ibews
+"""
+
+Given is the following grammar:
+
+S -> NP VP
+NP -> Det N0
+NP -> Det A0 N0
+VP -> V1
+VP -> V1 PP
+V1 -> Finite-Verb
+V1 -> Finite-Verb NP
+PP -> P0 NP
+
+and the sentence:
+
+The black cat chases the dog into the shed.
+
+a) Add the lexical rules for the grammars.
+b) Illustrate the working of the bottom-up parsing strategy (cf. Grammatiken
+   und Parsing (slides 11, 12)) by presenting the rewriting steps of a
+   successful parse using the above example.
+
+Det -> The
+N0 -> cat dog shed
+A0 -> black
+P0 -> into
+Finite-Verb -> chases
+
+Det black cat chases the dog into the shed.
+Det A0 cat chases the dog into the shed.
+Det A0 N0 chases the dog into the shed.
+Det A0 N0 Finite-Verb the dog into the shed.
+Det A0 N0 Finite-Verb Det dog into the shed.
+Det A0 N0 Finite-Verb Det N0 into the shed.
+Det A0 N0 Finite-Verb Det N0 P0 the shed.
+Det A0 N0 Finite-Verb Det N0 P0 Det shed.
+Det A0 N0 Finite-Verb Det N0 P0 Det N0.
+NP Finite-Verb Det N0 P0 Det N0.
+NP V1 Det N0 P0 Det N0.
+NP V1 NP P0 Det N0.
+NP V1 NP P0 NP.
+NP V1 NP PP
+NP V1 PP.
+NP VP
+S
