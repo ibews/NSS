@@ -16,17 +16,12 @@ Created on Tue Nov 26 12:48:17 2013
 import nltk
 
 grammar = nltk.parse_cfg("""
-S -> PN VP
-VP -> V NP | V S
-NP -> NAME | FW NAME
-PN -> 'I'
-A0 -> '100m'
-N0 -> 'record'
-FW -> 'that'
-Det -> 'the'
-V -> 'said' | 'reported' | 'broke' | 'thought'
-NAME -> 'Andre' | 'Usain Bolt'
-PROPER -> 'Jamaica Observer'
+S -> NP VP
+NP -> F NP | N | 'I' | N N
+VP -> V NP | V F S | V NP VP
+N -> 'Andre' | 'Jamaica Observer' | 'Usain Bolt' | '100m' | 'record'
+V -> 'reported' | 'said' | 'thought' | 'said'
+F -> 'the' | 'that'
 """)
 
 # Parser auf Grundlage der Grammatik erzeugen
@@ -42,3 +37,16 @@ trees = parser.nbest_parse(word)
 # Ausgabe der Syntaxbaeume
 for tree in trees:
     print tree
+    
+#(S
+#  (NP I)
+#  (VP
+#    (V thought)
+#    (NP (N Andre))
+#    (VP
+#      (V said)
+#      (NP (F the) (NP (N Jamaica Observer)))
+#      (VP
+#        (V reported)
+#        (NP (F that) (NP (N Usain Bolt)))
+#        (VP (V broke) (NP (F the) (NP (N 100m) (N record))))))))
