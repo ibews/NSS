@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jan 12 21:47:38 2014
+
+@author: ibews
+"""
+
+race -> 
+    competition -> 
+        hyponyms: [Synset('arms_race.n.01'), Synset('political_campaign.n.01')]
+        hypernyms: [Synset('contest.n.01')]
+    contest of speed -> 
+        hyponyms: [Synset('automobile_race.n.01'),
+                   Synset('potato_race.n.01'),
+                   ...
+                   Synset('bicycle_race.n.01')]
+        hypernyms: [Synset('contest.n.01')]
+board ->
+    commitee ->
+        hyponyms: [Synset('federal_reserve_board.n.01'),
+                   ...
+                   Synset('governing_board.n.01'),
+                   Synset('advisory_board.n.01'),
+                   Synset('appeal_board.n.01'),
+                   Synset('board_of_selectmen.n.01')]
+        hypernyms: [Synset('committee.n.01')]
+    wood plate ->
+        hyponyms: [Synset('skid.n.01'),
+                   Synset('matchboard.n.01'),
+                   Synset('deal.n.04'),
+                   Synset('wale.n.02'),
+                   Synset('chipboard.n.01')]
+        hypernyms: [Synset('lumber.n.01')]
