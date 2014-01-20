@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jan 20 21:25:18 2014
+
+@author: ibews
+"""
+
+
+
+Translate the following verb phrases using λ-abstracts and quantified formulas
+of first order logic.
+
+a feed Cyril and give a capuccino to Angus
+b be given 'War and Peace' by Pat
+c be loved by everyone
+d be loved or detested by everyone
+e be loved by everyone and detested by no-one
+
+a (feed(Cyril) & give(cappucino, angus, I))
+b (give('War and Peace', I, Pat)()
+c (all x: love(x,y))
+d (love(x,y) | all x: det(x,y))
+e ((all x: love(x,y)) | (all x: !det(x,y)))
