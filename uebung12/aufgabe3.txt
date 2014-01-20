@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jan 20 21:53:16 2014
+
+@author: ibews
+"""
+
+A: Es gibt eine Person y, die von allen Personen gesehen wird.
+B: Alle Personen sehen eine beliebige Person y.
+C: Alle Personen werden von einer beliebigen anderen Person gesehen.
+
+Unterschiedlich ist in den Asudrücken A und B/C, ob die Person y eine beliebige oder ein und dieselbe Person ist.
+In A muss es genau eine Person sein. In B und C kann es für jede Person X eine andere Person y sein.
