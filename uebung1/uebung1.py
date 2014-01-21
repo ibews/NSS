@@ -1,4 +1,3 @@
-from nltk import FreqDist
 from collections import Counter
 
 def mysucc(number):

@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 26 12:35:33 2013
+
+@author: ibews
+"""
+
+Given is the following grammar:
+
+S -> NP VP
+NP -> Det N0
+NP -> Det A0 N0
+VP -> V1
+VP -> V1 PP
+V1 -> Finite-Verb
+V1 -> Finite-Verb NP
+PP -> P0 NP
+
+and the sentence:
+
+The black cat chases the dog into the shed.
+
+a) Add the lexical rules for the grammars.
+b) Illustrate the working of the top-down parsing algorithm (cf. Grammatiken
+   und Parsing (slides 17ff.)) using the above example. Show the analysis trace
+   as a table (analysis steps and backup states while handling the possibility
+   list as a queue) as well as the search tree.
+   
+Det -> the
+N0 -> cat dog shed
+A0 -> black
+P0 -> into
+Finite-Verb -> chases
+

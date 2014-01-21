@@ -6,7 +6,7 @@ Created on Tue Nov 12 15:32:07 2013
 """
 from nltk import pos_tag as pt
 
-t = ['Dies', 'ist', 'eine', 'Beispiel', 'bGame', '.']
+t = ['Dies', 'ist', 'eine', 'Beispiel', 'Game', '.']
 
 a = [len(x) for x in t if "a" in x]
 

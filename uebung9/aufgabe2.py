@@ -87,7 +87,7 @@ grammar = nltk.parse_fcfg("""
  ADJ[AGR=[NUM=pl]] -> 'jungen'
 """)
 
-tokens = 'ein junges Kind'.split()
+tokens = 'einer jungen Katze'.split()
 parser = nltk.FeatureChartParser(grammar)
 for tree in parser.nbest_parse(tokens):
     print tree
